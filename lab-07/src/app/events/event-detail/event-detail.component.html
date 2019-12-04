@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="section-title">
+      <h1>Event details</h1>
+  </div>
+
+  <div class="event-card-details" *ngIf="event">
+    <div class="edit-event-btn">
+      <div *ngIf="isOwner(event)">
+          <button
+            mat-raised-button
+            color="warn"
+            (click)="deleteEvent(event)">
+            Delete Event
+          </button>
+
+          <button
+            class="button-edit"
+            mat-raised-button
+            color="primary"
+            [routerLink]="['/eventForm/', event.id]">
+            Edit Event
+        </button>
+      </div>
+    </div>
+    <mat-card>
+      <mat-card-header class="event">
+        <mat-card-title class="title">
+          <h3>{{ event.title | uppercase }}</h3>
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+          <p>{{ event.location }} - {{ event.date | date: "dd/MM/yyyy" }}</p>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <p>{{ event.addedBy}}</p>
+        </mat-card-subtitle>
+      </mat-card-header>
+
+      <div class="img">
+        <img [src]="imageUrl" alt="Photo">
+      </div>
+
+      <mat-card-content class="description">
+        <p>{{ event.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
