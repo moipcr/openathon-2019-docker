@@ -28,6 +28,7 @@ Como resultado obtendremos ambas imagenes (node y nginx)
 
 #Paso 3. Revisemos el fichero de configuración para Nginx.
 
+https://github.com/moipcr/openathon-2019-docker/blob/master/lab-07/nginx.conf
 
 #Paso 4. Revisemos el fichero Dockerfile.
 Es necesario crear este Dockerfile para que dockers sepa desplegar correctamente el proyecto en el contenedor
@@ -42,3 +43,8 @@ docker build -t events-ui --build-arg ARG_API_URL=localhost .
 Para ellos vamos a ejecutar el siguiente comando:
 
 docker run -d -p 80:80 --name "EventsUI" events-ui
+
+
+y voilá!!
+
+
