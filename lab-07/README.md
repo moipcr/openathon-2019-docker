@@ -44,8 +44,8 @@ Para ellos vamos a ejecutar el siguiente comando:
 
 docker run -d -p 80:80 --name "EventsUI" events-ui
 
-
+P.D: Si todo va bien, en cualquier navegador se podrá ver el resultado desde la dirección localhost 
 y voilá!!
 
-![title](https://github.com/username/reponame/blob/master/subfolders.../filename.jpg)
-![title](https://github.com/username/reponame/blob/master/subfolders.../filename.jpg)
+![title](https://github.com/moipcr/openathon-2019-docker/blob/master/lab-07/Captura0.png)
+![title](https://github.com/moipcr/openathon-2019-docker/blob/master/lab-07/Captura1.png)
