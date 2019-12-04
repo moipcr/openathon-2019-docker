@@ -1,6 +1,6 @@
 #Paso 1. Clonar el proyecto Events-UI a la máquina virtual
 
-Vamos a clonar el proyecto Events-UI en la misma máquina virtual que hemos usado en los laboratorios anteriores. Para ello ejecutaremos el siguiente comando en la carpeta raiz home del usuario:
+Vamos a clonar el proyecto Events-UI. Para ello ejecutaremos el siguiente comando en la carpeta raiz home del usuario:
 
 cd
 git clone https://github.com/pacobull/event-ui
@@ -27,11 +27,12 @@ Como resultado obtendremos ambas imagenes (node y nginx)
 
 
 #Paso 3. Revisemos el fichero de configuración para Nginx.
+Es necesario para el despliegue crear este fichero en vuestro directorio local
 
 https://github.com/moipcr/openathon-2019-docker/blob/master/lab-07/nginx.conf
 
 #Paso 4. Revisemos el fichero Dockerfile.
-Es necesario crear este Dockerfile para que dockers sepa desplegar correctamente el proyecto en el contenedor
+Es necesario crear este Dockerfile en vuestro directorio local para que Dockers sepa desplegar correctamente el proyecto en el contenedor
 
 https://github.com/moipcr/openathon-2019-docker/blob/master/lab-07/Dockerfile
 
