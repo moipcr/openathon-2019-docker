@@ -30,8 +30,9 @@ Como resultado obtendremos ambas imagenes (node y nginx)
 
 
 #Paso 4. Revisemos el fichero Dockerfile.
+Es necesario crear este Dockerfile para que dockers sepa desplegar correctamente el proyecto en el contenedor
 
-
+https://github.com/moipcr/openathon-2019-docker/blob/master/lab-07/Dockerfile
 
 #Paso 5. Crear la nueva imagen a partir del fichero Dockerfile.
 
